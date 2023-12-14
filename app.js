@@ -7,6 +7,15 @@ const port = 3001;
 
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.write('<html>');
+    res.write('<head><title>Email Server</title></head>');
+    res.write('<body><h1>This is my email server</h1></body>');
+    res.write('</html>');
+    res.end();
+})
+
 app.post('/send-email', (req, res) => {
 //   const { to, subject, text } = req.body;
     const to = "mathieu.m.girard@gmail.com"
