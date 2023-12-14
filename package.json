@@ -1,6 +1,24 @@
 {
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.18.2",
     "nodemailer": "^6.9.7"
-  }
+  },
+  "name": "email_server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathieuGirard19/email_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathieuGirard19/email_server/issues"
+  },
+  "homepage": "https://github.com/MathieuGirard19/email_server#readme",
+  "description": ""
 }
