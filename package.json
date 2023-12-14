@@ -16,6 +16,9 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  },
   "bugs": {
     "url": "https://github.com/MathieuGirard19/email_server/issues"
   },
