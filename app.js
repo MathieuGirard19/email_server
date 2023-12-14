@@ -18,14 +18,11 @@ app.get('/', (req, res) => {
 })
 
 app.post('/send-email', (req, res) => {
-//   const { to, subject, text } = req.body;
     const to = process.env.to;
     const from = process.env.from;
     const password = process.env.password
-    const subject = "test";
-    const text = "test";
-
-    console.log(to)
+    const subject = req.body['subject'];
+    const text = req.body['text'];
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
